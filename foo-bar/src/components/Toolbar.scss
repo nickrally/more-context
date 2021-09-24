@@ -1,0 +1,8 @@
+@import "styles/color-variables.scss";
+
+.someborder {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  background-color: var(--backcolor);
+}

@@ -1,0 +1,13 @@
+$red: #ff0000;
+$blue: #003d80;
+$orange: #f7922f;
+
+$light-red: lighten($red, 70%);
+$light-blue: lighten($blue, 70%);
+$light-orange: lighten($orange, 70%);
+
+:export {
+  lightred: $light-red;
+  lightblue: $light-blue;
+  lightorange: $light-orange;
+}
