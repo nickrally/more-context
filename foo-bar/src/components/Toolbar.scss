@@ -1,6 +1,7 @@
-@import "styles/color-variables.scss";
+@import "styles/color-variables.module.scss";
 
 .someborder {
+  padding: 10px 0 20px 0;
   border-style: solid;
   border-width: thin;
   border-color: black;
