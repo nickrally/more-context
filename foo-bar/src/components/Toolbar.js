@@ -1,9 +1,10 @@
 import "./Toolbar.scss";
 import AppContext from "./AppContext";
+import Dropdown from "./Dropdown";
 import colors from "./styles/color-variables.module.scss";
 import { useContext, useRef, useEffect } from "react";
 
-const Toolbar = (props) => {
+const Toolbar = ({ colorOptions }) => {
   const toolbarRef = useRef();
   const appCtx = useContext(AppContext);
   //toolbarRef.current.style.setProperty("--backcolor", "red");
@@ -18,7 +19,7 @@ const Toolbar = (props) => {
   }, [appCtx.color]);
   return (
     <div className={colorClassName} ref={toolbarRef}>
-      {props.children}
+      <Dropdown />
     </div>
   );
 };
